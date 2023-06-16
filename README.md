@@ -1,15 +1,13 @@
-התוענית מקבלת אורך ורוחב של מרובע ואות שממנה הריבוע יהיה מודפס ומדפיסה
-crlf- יורד שורה
-len- סופר את הרוחב של כל שורה
-mone - הרוחב שהמשתמש מכניס
-counter - סופר את האורך של המרובע
-maxlines- האורך של המרובע שהמשתמש מכניס
-char- מבנה הריבוע
+# Project information
+Project creator- Dvir Wynne
+Name of the teacher - Barak Sabari
+Grade 10-4 yeshiva bni akiva givat shmoel 2023
 
-התוכנית בהתחלה מבקשת את האורך והרוחב של המרובע, בודקת שהוא אכן מספר ובודקת שהוא לא אפס ושמה את הנתון במקום המתאים
-במקרה שהוא אפס התוכנית תקפוץ אל iszero ותציג הודעת שגיאה ותסגות את התוכנית
-במקרה שאות לא מספר התוכנית תקפוץ אל illegalchr ותציג הודעת שגיאה ותסגור את התוכנית
-אחר כך התוכנית מבקשת אות בשביל המרובע ושמה אותו בchar
-במקרה שכל הנתונים לא יוצרים שגיאה התוכנית קופצת אל nextline שדוחפת אתלמחסנית bx (mone) 
-וקוראת לprtline שמורידה שורה, שמה רווח בתחילתה ומדפיסה את כמות התווים שהמשתמש ביקש
-כשהתוכנית חוזרת אל nextline התוכנית מעלה את counter באחד וממשיכה עד שcounter שווה לmaxlines 
+
+# The purpose of this code
+this code suppose to generate a square base on the user's want
+the code asks the user to put in three inputs 
+one is the square's length, two is the square's width, and three is the characters the square is made of.
+The user can put any number between 1-9 in the width and length and any character.
+
+# Every 
