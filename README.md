@@ -10,4 +10,6 @@ the code asks the user to put in three inputs
 one is the square's length, two is the square's width, and three is the characters the square is made of.
 The user can put any number between 1-9 in the width and length and any character.
 
-# Every 
+# Running examples
+## An example where the user put a zero
+
