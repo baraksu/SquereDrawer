@@ -24,5 +24,6 @@ Firstave developed the input stages and the filters (it t be zero and must be a 
 Firstly I can add the zero filters and the characters filters directly in the functions
 and I can maybe cut some code lines to make the code more compact
 
-# How it feels making the projact
-The project was an emotional rollercoaster, filled with anticipation, challenges, and eventual triumph, leaving me feeling accomplished and personally transformed.
+# How it feels making the project
+The project was an emotional rollercoaster, filled with anticipation, challenges, and eventual triumph, leaving me feeling accomplished and personally transformed. 
+Even though it was hard I did it eventually
