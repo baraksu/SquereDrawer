@@ -7,6 +7,16 @@ msg3 db 13,10, 'Enter the width you want your Square to be (1-9): $'
 msg4 db 13,10,'NUMBER CANT BE ZERO $'
 msg5 db 13,10,'ILLEGAL CHARACTER! $'
 msg6 db 13,10,'Enter the character for the square to be made of: $'
+msg7 db 13,10
+db '  _____                                  ',13,10
+db ' / ____|                                 ',13,10
+db '| (___    __ _  _   _   __ _  _ __   ___ ',13,10
+db ' \___ \  / _` || | | | / _` ||  __| / _ \',13,10
+db ' ____) || (_| || |_| || (_| || |   |  __/',13,10
+db '|_____/  \__, | \__,_| \__,_||_|    \___|',13,10
+db '            | |                          ',13,10
+db '            |_|                          ',13,10
+db '                                         ',13,10,'$'
 crlf db 13,10,'$'  ;Used to go to the next line
 len db 0           ;Uesd to store the length of each line
 mone dw 0          ;Use to store the width the user put
@@ -19,6 +29,10 @@ char db 0          ;Used to store the char the square is made of
      mov ax, @data  ; asking for length, width and a char
      mov ds, ax
 
+     lea dx, msg7
+     mov ah, 09h
+     int 21h
+     
      lea dx, msg2
      mov ah, 09h
      int 21h
@@ -89,22 +103,7 @@ nextLine:  ;takes mone and put it in bx, call prtLine and incris the counter
      
      jmp nextLine
          
-prtLine:      ;print an enter at the start of each line and put a space
-     pop ax
-     pop bx
-     push ax
-     mov len, bl
-         
-     lea dx, crlf
-     mov ah, 09h
-     int 21h
-     
-     mov ah, 2h
-     mov dl, 09h
-     int 21h
-         
-     mov dl, char
-     mov ah, 02h
+
 
 prtChar:   ;print a series of the chars
      int 21h
@@ -121,6 +120,32 @@ exit:     ;exit the program
      int 21h
      
      mov ah, 4Ch
-     int 21h     
+     int 21h
+     
+          
+proc prtLine      ;print an enter at the start of each line and put a space
+     
+     mov ax, @data
+     mov ds,ax 
+     
+     pop ax
+     pop bx
+     push ax
+     mov len, bl
          
+     lea dx, crlf
+     mov ah, 09h
+     int 21h
+     
+     mov ah, 2h
+     mov dl, 09h
+     int 21h
+         
+     mov dl, char
+     mov ah, 02h
+     
+     jmp prtchar
+
+endp prtLine
+
 END
