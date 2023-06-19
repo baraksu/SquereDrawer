@@ -1,6 +1,6 @@
 # Project information
-Project creator- Dvir Wynne
-Name of the teacher - Barak Sabari
+Project creator- Dvir Wynne.
+Name of the teacher - Barak Sabari.
 Grade 10-4 yeshiva bni akiva givat shmoel 2023
 
 
